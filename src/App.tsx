@@ -1,11 +1,14 @@
 import React from "react";
 import Nav from "./nav";
+import Buttons from "./buttons";
+import Container from "@material-ui/core/Container";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <Container maxWidth="xl">
       <Nav />
-    </div>
+      <Buttons />
+    </Container>
   );
 };
 
