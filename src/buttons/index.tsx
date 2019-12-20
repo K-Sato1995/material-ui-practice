@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Typography } from "@material-ui/core";
+import { Box, Button, Typography } from "@material-ui/core";
 
 const index = () => {
   return (
-    <div>
+    <Box m={2}>
       <Typography variant="h4">Buttons</Typography>
       <Button variant="contained">Default</Button>
       <Button variant="contained" color="primary">
@@ -18,7 +18,7 @@ const index = () => {
       <Button variant="contained" color="primary" href="#contained-buttons">
         Link
       </Button>
-    </div>
+    </Box>
   );
 };
 
