@@ -1,9 +1,15 @@
 import React from "react";
 import { Box, Button, Typography } from "@material-ui/core";
+import styled from "styled-components";
+
+const StyledBox = styled(Box)`
+  border: solid 1px ${({ theme }) => theme.borderColor};
+  padding: 20px;
+`;
 
 const index = () => {
   return (
-    <Box m={2}>
+    <StyledBox m={2}>
       <Typography variant="h4">Buttons</Typography>
       <Button variant="contained">Default</Button>
       <Button variant="contained" color="primary">
@@ -18,7 +24,7 @@ const index = () => {
       <Button variant="contained" color="primary" href="#contained-buttons">
         Link
       </Button>
-    </Box>
+    </StyledBox>
   );
 };
 
