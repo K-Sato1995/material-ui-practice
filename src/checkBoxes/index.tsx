@@ -1,9 +1,14 @@
 import React from "react";
 import { Box, Checkbox, Typography } from "@material-ui/core";
+import styled from "styled-components";
 
+const StyledBox = styled(Box)`
+  border: solid 1px ${({ theme }) => theme.borderColor};
+  padding: 20px;
+`;
 const index = () => {
   return (
-    <Box m={2}>
+    <StyledBox m={2}>
       <Typography variant="h4">Check Boxes</Typography>
 
       <Checkbox
@@ -45,7 +50,7 @@ const index = () => {
         value="small"
         inputProps={{ "aria-label": "checkbox with small size" }}
       />
-    </Box>
+    </StyledBox>
   );
 };
 
