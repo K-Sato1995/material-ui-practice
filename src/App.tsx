@@ -3,6 +3,7 @@ import Nav from "./nav";
 import Buttons from "./buttons";
 import CheckBoxes from "./checkBoxes";
 import DatePickers from "./datePickers";
+import RadioButtons from "./radioButtons";
 import Container from "@material-ui/core/Container";
 
 const App: React.FC = () => {
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Buttons />
       <CheckBoxes />
       <DatePickers />
+      <RadioButtons />
     </Container>
   );
 };
